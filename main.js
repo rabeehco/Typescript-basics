@@ -58,3 +58,11 @@ function add(num1, num2) {
 add(5, 5);
 add(5, 'hello'); // shows error!
 add(); // hover on the bracket. It shows the return type and arguments type
+function fullName(person) {
+    console.log("".concat(person.firstname, " ").concat(person.lastname));
+}
+var p = {
+    firstname: 'Hari',
+    lastname: 'Lal'
+};
+fullName(p);

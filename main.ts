@@ -80,5 +80,19 @@ add(5,5)
 add(5, 'hello') // shows error!
 add() // hover on the bracket. It shows the return type and arguments type
 
-function fullName(person: {firstname: string})
+interface Person {
+    firstname: string,
+    lastname: string
+}
 
+
+function fullName(person: Person) {
+    console.log(`${person.firstname} ${person.lastname}`)
+}
+
+let p = {
+    firstname: 'Hari',
+    lastname: 'Lal'
+}
+
+fullName(p)
